@@ -339,7 +339,7 @@ class JupyterHub(Application):
     def _proxy_api_port_default(self):
         return self.port + 1
 
-    hub_port = Integer(8081,
+    hub_port = Integer(8082,
         help="The port for this process"
     ).tag(config=True)
     hub_ip = Unicode('127.0.0.1',
